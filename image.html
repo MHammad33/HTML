@@ -24,5 +24,40 @@
 
 			<img src="./img/img.png" alt="Image" />
 		</picture> -->
+
+		<!-- ? Image Map Generator -->
+		<img src="./img/img.png" alt="Image" usemap="#image-map" />
+
+		<map name="image-map" />
+
+		<area
+			onclick="one()"
+			target="_blank"
+			alt="Facebook"
+			title="Facebook"
+			href="https://www.facebook.com/"
+			coords="0,0,100,100"
+			shape="rect"
+		/>
+
+		<area
+			onclick="two()"
+			target="_blank"
+			alt="Twitter"
+			title="Twitter"
+			href="https://twitter.com/"
+			coords="100,0,200,100"
+			shape="rect"
+		/>
 	</body>
+
+	<script>
+		function one() {
+			alert("You clicked on one");
+		}
+
+		function two() {
+			alert("You clicked on two");
+		}
+	</script>
 </html>
